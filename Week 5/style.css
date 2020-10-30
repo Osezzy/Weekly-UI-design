@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #efefef;
+}
+
+img {
+    width: 50px;
+}
+
+.card {
+    width: 55%;
+    margin: 15% auto;
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.fa-times {
+    position: absolute;
+    right: 4%;
+    top: 6%;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.card h2 {
+    font-weight: 900;
+    font-size: 30px;
+    width: 300px;
+    margin-left: 20px;
+}
+
+form {
+    margin-top: 25px;
+    margin-left: 0;
+}
+
+form input {
+    width: 24rem;
+    border-radius: 100px;
+    border: 1px solid #bdbdbd;
+    padding: 15px;
+    outline: none;
+    background-color: #efefef;
+    margin-left: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+form .fa-search {
+    position: relative;
+    left: 380px;
+    top: 3px;
+    font-size: 20px;
+    color: #747474;
+    cursor: pointer;
+}
+
+input::placeholder {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.card>p {
+    margin: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sugg {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 20px;
+}
+
+.sugg .friend {
+    border: 1px solid #bdbdbd;
+    width: 260px;
+    padding: 19px;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+}
+
+.sugg .one {
+    margin-right: 20px;
+}
+
+.sugg .friend img {
+    width: 70px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.sugg .friend .friend-name {
+    margin-left: 10px;
+    margin-top: 12px;
+}
+
+.sugg .friend .friend-name p {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 66%;
+    }
+    .card h2 {
+        font-size: 1.9em;
+    }
+    form input {
+        width: 20rem;
+    }
+    .sugg {
+        flex-wrap: wrap;
+    }
+    .two {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .card {
+        padding: 2rem;
+    }
+    .card h2 {
+        margin-left: 0;
+        font-size: 1.4em;
+    }
+    form {
+        width: 100%;
+    }
+    form input {
+        width: 19rem;
+        padding: .7em;
+    }
+    input::placeholder {
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    body {
+        padding: 2rem;
+    }
+    .card {
+        width: 100%;
+    }
+}
