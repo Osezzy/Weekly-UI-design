@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-X: hidden;
+}
+
+.peak {
+    height: 12vh;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.peak img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.peak a {
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    cursor: S;
+}
+
+.banner {
+    height: 88vh;
+    background-color: rgb(255, 242, 217);
+    position: relative;
+    overflow: hidden;
+}
+
+.banner>img.left {
+    position: absolute;
+    left: -380px;
+    width: 730px;
+}
+
+.banner>img.right {
+    position: absolute;
+    right: -380px;
+    width: 730px;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.banner-text h1 {
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.banner-text input.search {
+    width: 550px;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 2px;
+    font-size: 18px;
+}
+
+.banner-text input.search::placeholder {
+    font-size: 16px;
+    color: rgb(119, 119, 119);
+}
+
+.banner-text input.button {
+    padding: 16px 20px;
+    margin-left: 15px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
+
+.banner-text input.button:hover {
+    background-color: rgb(29, 29, 29);
+}
+
+
+/* Banner */
+
+section {
+    width: 87%;
+    margin: 50px auto;
+}
+
+.top-text h1 {
+    font-size: 2.1em;
+    font-weight: 600;
+    width: 50%;
+}
+
+.top-text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.top-text .icon>i {
+    opacity: 0.5;
+    cursor: pointer;
+    font-size: 2em;
+    color: rgb(182, 182, 182);
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    grid-gap: 20px;
+}
+
+.feat .pic-1 {
+    width: 100%;
+    height: 37vh;
+    background-image: url(asset/pic-1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.feat .pic-2 {
+    width: 100%;
+    height: 37vh;
+    background-image: url(asset/pic-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.feat .pic-3 {
+    width: 100%;
+    height: 37vh;
+    background-image: url(asset/pic-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.feat .feat-text {
+    margin-top: 15px;
+}
+
+.feat-text h4 {
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.feat-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.feat .numb {
+    width: 40px;
+    background-color: rgb(218, 218, 218);
+    text-align: center;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+.feat .green {
+    background-color: rgb(209, 255, 209);
+    color: green
+}
+
+.feat small {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+hr {
+    background-color: #F0F0F0;
+    height: 2px;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#apple-logo,
+#apk-logo {
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+}
+
+#advert4app {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#advert4app>img {
+    width: 110px;
+    border-radius: 15px;
+}
+
+#logoHere {
+    width: 100px;
+    height: 100px;
+    display: inline;
+}
+
+#textHere {
+    margin-left: 20px;
+}
+
+#appDownload {
+    font-size: 2.2em;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+#apple,
+#android {
+    width: 110px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F0F0;
+    border-radius: 25px;
+    margin-right: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#links {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+}
+
+.ihu {
+    width: 90%;
+    margin: auto;
+}
+
+#newOnTheApp {
+    width: 90%;
+    margin: auto;
+}
+
+#headTitle {
+    font-size: 2em;
+    font-weight: 600;
+    padding: 0 0 1rem 0;
+    margin-top: 30px;
+}
+
+#contain {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    grid-gap: 30px;
+}
+
+.displayImg {
+    width: 100%;
+    height: 250px;
+}
+
+.productName {
+    font-size: 1.2em;
+    font-weight: 500px;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.deliveryPrice {
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0;
+}
+
+.productCategory {
+    font-size: 0.9em;
+    color: rgb(84, 84, 84);
+}
+
+#services {
+    width: 90%;
+    margin: 20px auto auto auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    grid-gap: 30px;
+}
+
+.servImg {
+    width: 100%;
+    height: 250px;
+}
+
+.servTitle {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+#services a {
+    color: dodgerblue;
+}
+
+.servDesc {
+    margin: 0;
+    padding: 0;
+}
+
+#lg {
+    width: 90%;
+    margin: auto;
+}
+
+.lg p {
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+#pizzaDelivery {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.pizzaImg {
+    width: 100%;
+    height: 250px;
+}
+
+.pizzaTitle {
+    font-size: 1.2em;
+    font-weight: 500px;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.pizzaPrice {
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0;
+}
+
+.rating {
+    width: 40px;
+    height: 40px;
+    background-color: #F0F0F0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-top: 12px;
+}
+
+.rating p {
+    font-size: 1em;
+    color: dodgerblue;
+}
+
+.text {
+    float: left;
+}
+
+#citiesNearMe {
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 30px;
+}
+
+.cityUL {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cityTitle {
+    width: 90%;
+    margin: auto;
+}
+
+#cityTitle p {
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.cityUL li {
+    margin: 20px 0;
+}
+
+#foodTitle {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#foodTitle p {
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+#foodNearMe {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 11rem);
+    grid-gap: 10px;
+    margin-bottom: 50px;
+}
+
+.foodImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+}
+
+.food {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.food p {
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding-top: 40px;
+}
+
+.up {
+    display: grid;
+    grid-gap: 1rem;
+    width: 90%;
+    margin: auto;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 50px;
+    border-bottom: 1px solid #fff;
+}
+
+.get-app {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.get-app>img {
+    width: 100px;
+    margin-bottom: 90px;
+}
+
+.get-app .png {
+    width: 135px;
+}
+
+.about {
+    display: flex;
+    width: 540px;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.about h2,
+.help h2 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.about .link ul li a,
+.about .help ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.about .help ul li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.about .link ul li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-top: 18px;
+    font-weight: 300;
+}
+
+.last {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon {
+    text-align: center;
+}
+
+.icon .fab {
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+.last .links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 70%;
+}
+
+.last .links li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.last .links li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+@media screen and (max-width: 1080px) {
+    #headTitle {
+        font-size: 2.2em;
+    }
+    .servTitle {
+        font-size: 1.3em;
+    }
+    .lg p {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .banner-text h1 {
+        font-size: 1.7rem;
+    }
+    .banner-text input.search {
+        display: inline-block;
+        margin-bottom: 1rem;
+        padding: 10px 12px;
+    }
+    .banner-text input.button {
+        font-size: .8rem;
+        padding: 12px 14px;
+    }
+    #appDownload {
+        font-size: 1.6rem;
+    }
+    #advert4app>img {
+        width: 5rem;
+    }
+    .cityUL li {
+        font-size: .9rem;
+    }
+    .up {
+        grid-template-columns: repeat(auto-fit, 40rem);
+        margin: auto;
+        margin-left: 0;
+    }
+    .get-app {
+        display: block;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .get-app>img {
+        width: 5rem;
+        margin-bottom: 1rem;
+    }
+    .last {
+        grid-template-columns: auto
+    }
+    .links {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fit, 10rem);
+    }
+    .last .links {
+        grid-template-columns: repeat(auto-fit, 10rem);
+        grid-gap: 0;
+    }
+}
+
+@media screen and (max-width: 454px) {
+    section {
+        width: 95%;
+    }
+    .banner-text input.search {
+        width: 20rem;
+    }
+    .features,
+    #contain,
+    #services,
+    #pizzaDelivery {
+        grid-template-columns: repeat(auto-fit, 23rem);
+        align-items: center;
+        justify-content: center;
+    }
+    .peak img {
+        width: 4rem;
+    }
+    .top-text h1 {
+        font-size: 1.4rem;
+        width: 90%;
+        margin: 1.1rem;
+    }
+    .top-text h1,
+    #headTitle,
+    .servTitle,
+    .lg p {
+        font-size: 1.4rem;
+        width: 90%;
+    }
+    #advert4app {
+        width: 90%;
+        margin: 4rem 1rem;
+    }
+    #appDownload {
+        font-size: 1.1rem;
+    }
+    .servTitle {
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+    #citiesNearMe {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .reduce {
+        font-size: .9em;
+    }
+    .reduce li a {
+        font-size: .9em;
+    }
+    .get-app {
+        margin-left: -200px;
+    }
+    .about {
+        width: 300px;
+        margin-left: 60px;
+    }
+}
